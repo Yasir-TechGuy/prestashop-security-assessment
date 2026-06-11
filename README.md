@@ -28,7 +28,8 @@ The objective was to evaluate the application's security posture by identifying 
 - Nikto
 
 ## Findings
-![Uploading nikto scan report.png…]()
+<img width="1920" height="360" alt="nikto scan report" src="https://github.com/user-attachments/assets/e7e6356f-328f-4e23-9b6b-4ee57f62008a" />
+
 
 <img width="1920" height="1080" alt="Attack screenshot 2 - owaspzap findings" src="https://github.com/user-attachments/assets/815c4cb5-ec04-4502-8000-b45b7c4d2678" />
 
