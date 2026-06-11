@@ -1,43 +1,72 @@
 # PrestaShop Security Assessment and Hardening
 
-This project documents the deployment, security assessment, attack simulation, hardening, and validation of a Dockerized PrestaShop e-commerce application.
+## Overview
 
-The objective was to evaluate the application's security posture by identifying vulnerabilities, validating security findings, implementing defensive controls, and verifying the effectiveness of those controls.
+This project documents the deployment, security assessment, hardening, and validation of a Dockerized PrestaShop e-commerce application.
 
-## Key Activities
+The objective was to evaluate the application's security posture by identifying vulnerabilities, implementing defensive controls, and validating remediation effectiveness.
 
-- Deployed PrestaShop using Docker and MySQL
-- Conducted vulnerability assessment using Nikto
-- Identified clickjacking and information disclosure risks
-- Validated findings through manual testing
-- Implemented Apache security headers
-- Developed ModSecurity-compatible WAF rules
-- Performed post-remediation security validation
-- Produced security assessment and attack simulation reports
+## Skills Demonstrated
 
-## Technologies Used
+- Web Application Security
+- Vulnerability Assessment
+- Docker Deployment
+- Linux Administration
+- Security Hardening
+- Apache Configuration
+- WAF Development
+- Security Validation
+- Technical Documentation
+
+## Environment
 
 - Kali Linux
 - Docker
 - PrestaShop
-- Apache
 - MySQL
+- Apache
 - Nikto
-- ModSecurity (Rule Development)
 
-## Key Findings
+## Findings
 
-- Missing X-Frame-Options Header
-- Missing X-Content-Type-Options Header
-- INSTALL.txt Information Disclosure
-- robots.txt Information Disclosure
+| Finding | Risk |
+|----------|----------|
+| Missing X-Frame-Options | Medium |
+| Missing X-Content-Type-Options | Medium |
+| INSTALL.txt Exposure | Low |
+| robots.txt Disclosure | Low |
 
-## Security Improvements
+## Mitigations
 
-- X-Frame-Options: DENY
-- X-Content-Type-Options: nosniff
-- Content-Security-Policy (CSP)
-- Referrer-Policy
-- Custom WAF Rules
+- Implemented X-Frame-Options
+- Implemented X-Content-Type-Options
+- Added Content Security Policy
+- Added Referrer Policy
+- Created ModSecurity-compatible WAF Rules
 
-This project demonstrates the complete application security lifecycle: deployment, assessment, attack simulation, remediation, validation, and documentation.
+## Validation
+
+Validation was performed using:
+
+```bash
+curl -I http://localhost:8080
+```
+
+The implemented controls were successfully verified.
+
+## Repository Contents
+
+- Reports
+- Screenshots
+- WAF Rule File
+- Security Assessment Documentation
+
+## Lessons Learned
+
+This project demonstrated the importance of:
+
+- Secure deployment practices
+- Vulnerability identification
+- Risk assessment
+- Defensive security controls
+- Validation and documentation
