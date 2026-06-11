@@ -28,6 +28,9 @@ The objective was to evaluate the application's security posture by identifying 
 - Nikto
 
 ## Findings
+<img width="1920" height="262" alt="Pasted image (9)" src="https://github.com/user-attachments/assets/14db9646-8dd3-47d0-85a9-dfefe54ac051" />
+<img width="1920" height="1080" alt="Attack screenshot 2 - owaspzap findings" src="https://github.com/user-attachments/assets/815c4cb5-ec04-4502-8000-b45b7c4d2678" />
+
 
 | Finding | Risk |
 |----------|----------|
